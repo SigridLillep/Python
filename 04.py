@@ -16,11 +16,14 @@
     Programm väljastab: Saad teha 4 täis kinkekasti. Üle jääb 3 kingitust.
 """
 
-karbi_suurus = 5
-kingitused = int(input("Lisa kingituste arv: "))
-kastid = kingitused // karbi_suurus
-jaak = kingitused % karbi_suurus
-print(kastid, jaak)
+try:
+    karbi_suurus = 5
+    kingitused = int(input("Lisa kingituste arv: "))
+    kastid = kingitused // karbi_suurus
+    jaak = kingitused % karbi_suurus
+    print(kastid, jaak)
+except:
+    print("Jälle tekitad probleeme!")
 
 
 #4.1
