@@ -87,16 +87,20 @@ import turtle
 try:
     valik = random.randint(0,1)
     arvamus = int(input("Vali kull 1 või kiri 0:"))
-    if valik == arvamus:
-        print("Arvasid ära!")
-        turtle.color("green")
-        turtle.circle(50)
+    if arvamus >= 0 and arvamus <=1:
+        if valik == arvamus:
+            print("Arvasid ära!")
+            turtle.color("green")
+            turtle.circle(50)
+        else:
+            print("Arvasid valesti!")
+            turtle.color("red")
+            turtle.circle(50)
+        turtle.done()
     else:
-        print("Arvasid valesti!")
-        turtle.color("red")
-        turtle.circle(50)
-    turtle.done()
+        print("Sellist valikut ju polnud!")
     
 except:
     print("Viga sisestuses!")
+    
     
