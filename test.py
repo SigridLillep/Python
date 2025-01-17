@@ -1,1 +1,1 @@
-print ("tere maailm")"
+print ("tere maailm")
