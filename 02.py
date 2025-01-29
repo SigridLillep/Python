@@ -16,7 +16,7 @@ aken.setup(width=600,height=400)
 aken.title("Olümpiarõngad, Sigrid Lillep")
 
 
-turtle.speed(0)
+turtle.speed(3)
 #sinine
 turtle.penup()
 turtle.goto(-200,100)
