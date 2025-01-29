@@ -1,5 +1,5 @@
 import turtle
-suurus = 50
+suurus = 100
 t = turtle.Turtle()
 t.speed(3)
 t.pensize(3)
