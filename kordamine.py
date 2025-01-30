@@ -12,18 +12,29 @@
 # inimeste arv: 40, kohtade arv: 40.
 
 import math
-inimesed = 60
+inimesed = 120
 kohad = 40
 
+jaak = inimesed%kohad
 
-busside_arv = math.ceil(inimesed/kohad)
-if inimesed <= kohad :
-    viimane_inimeste_arv = inimesed
+if jaak>0:
+    busside_arv = (inimesed // kohad)+1
 else:
-    viimane_inimeste_arv = abs(inimesed - kohad)
+    busside_arv = inimesed // kohad
+if jaak == 0:
+    jaak = kohad
 
 print(f"Busside arv: {busside_arv}")
-print(f"Viimases bussis on inimesi: {viimane_inimeste_arv}")
+print(f"Viimases bussis on inimesi: {jaak}")
+
+# busside_arv = math.ceil(inimesed/kohad)
+# if inimesed <= kohad :
+#     viimane_inimeste_arv = inimesed
+# else:
+#     viimane_inimeste_arv = abs(inimesed - kohad)
+
+# print(f"Busside arv: {busside_arv}")
+# print(f"Viimases bussis on inimesi: {viimane_inimeste_arv}")
 
 
 
@@ -38,13 +49,13 @@ print(f"Viimases bussis on inimesi: {viimane_inimeste_arv}")
 # väljastab Need ei ole ülemised pilved, kui kõrgus on 6,0 km või alla selle.
 # Kasutaja peab saama sisestada pilvede kõrgust nii täisarvuna kui ka ujukomaarvuna, nt 7.5.
 
-korgus = float(input("Sisesta pilvede kõrgus: "))
-if korgus > 6:
-    print("Ülemised pilved")
-elif korgus >= 2 and korgus <= 6:
-    print("Keskmised pilved")
-else:
-    print("Alumised pilved")
+# korgus = float(input("Sisesta pilvede kõrgus: "))
+# if korgus > 6:
+#     print("Ülemised pilved")
+# elif korgus >= 2 and korgus <= 6:
+#     print("Keskmised pilved")
+# else:
+#     print("Alumised pilved")
 
 
 #1.2. Aasta liblikas
