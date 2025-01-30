@@ -1,7 +1,7 @@
 import turtle
 suurus = 100
 t = turtle.Turtle()
-t.speed(3)
+t.speed(9)
 t.pensize(3)
 
 t.penup()
@@ -30,7 +30,8 @@ for i in range(4):
 
 t.penup()
 t.pencolor("red")
-t.goto(-suurus / -100, -200)
+t.goto(-suurus / 200, -200)
+t.left(45)
 t.pendown()
 for i in range(4):
     t.left(90)
