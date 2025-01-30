@@ -12,6 +12,28 @@
 # küsib kasutajalt, mitmendat laulu ta soovib (kasutaja sisestab alati täisarvu);
 # väljastab ekraanile vastavalt valitud arvule muusikapala
 
+musa = "edm.txt"
+fail = open(musa, encoding="UTF-8")
+# näita kõiki lugusid
+
+nr = 1
+for pala in fail:
+    print(str(nr)+". "+pala, end="")
+    nr+=1
+
+#Kuva valitud lugu
+print()
+valik = int(input("Vali lugu: "))
+fail.seek(0)
+mangin = 1
+for pala in fail:
+    if valik == mangin:
+        print(pala, end="")
+    mangin+=1
+        
+
+
+fail.close()
 
 
 
@@ -26,13 +48,13 @@
 # väljastab ekraanile kõik sissetulekud ehk failist leitud positiivsed arvud. 
 # Iga arv peab olema eraldi real ja positiivsete arvude omavaheline järjekord peab jääma samaks nagu failis. 
 
-fail = open("konto.txt", encoding="UTF-8")
+# fail = open("konto.txt", encoding="UTF-8")
 
-for kirje in fail:
-    if float(kirje) > 0:
-        print(float(kirje), end="\n")
+# for kirje in fail:
+#     if float(kirje) > 0:
+#         print(float(kirje), end="\n")
 
-fail.close()
+# fail.close()
 
 
 
@@ -51,13 +73,13 @@ fail.close()
 # võib eeldada, et sisestatakse täisarv, mis kuulub lõiku [2011; 2019].
 # väljastab, mitu inimest sel aastal vastu võeti.
 
-fail = open("rebased.txt", encoding="UTF-8")
-vastuvoetud = []
+# fail = open("rebased.txt", encoding="UTF-8")
+# vastuvoetud = []
 
-for rida in fail:
-    vastuvoetud.append(int(rida))
+# for rida in fail:
+#     vastuvoetud.append(int(rida))
 
-fail.close()
+# fail.close()
 
-aasta = input("Lisa aasta 2011-2019: ")
-print(vastuvoetud[int(aasta[3])-1])
+# aasta = input("Lisa aasta 2011-2019: ")
+# print(vastuvoetud[int(aasta[3])-1])
