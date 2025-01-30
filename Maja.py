@@ -4,13 +4,7 @@ t = turtle.Turtle()
 t.speed(3)
 t.pensize(3)
 
-# Maja kast
-t.penup()
-t.goto(-suurus / 2, 0)
-t.pendown()
-for i in range(4):
-    t.forward(suurus)
-    t.left(90)
+
 
 
 # Maja katus
@@ -30,6 +24,15 @@ t.goto(-uks / 2, 0)
 t.pendown()
 for i in range(4):
     t.forward(uks)
+    t.left(90)
+
+    # Maja kast
+t.pencolor("black")
+t.penup()
+t.goto(-suurus / 2, 0)
+t.pendown()
+for i in range(4):
+    t.forward(suurus)
     t.left(90)
 
 t.hideturtle()
