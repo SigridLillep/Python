@@ -4,9 +4,6 @@ t = turtle.Turtle()
 t.speed(3)
 t.pensize(3)
 
-
-
-
 # Maja katus
 t.pencolor("green")
 t.penup()
@@ -26,7 +23,7 @@ for i in range(4):
     t.forward(uks)
     t.left(90)
 
-    # Maja kast
+# Maja kast
 t.pencolor("black")
 t.penup()
 t.goto(-suurus / 2, 0)
