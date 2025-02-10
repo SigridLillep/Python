@@ -34,7 +34,7 @@ while True:
         else:
             print("Sul ei ole raha, mine tööle!")
 
-    print("Uus saldo:", algne_saldo)
+    print("Konto jääk:", algne_saldo)
 
 """
 KILPKONN
