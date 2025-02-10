@@ -36,15 +36,3 @@ while True:
 
     print("Konto jääk:", algne_saldo)
 
-"""
-KILPKONN
-Kirjuta programm, mis lubab kasutajal valida kujundite tüübi (viisnurk, ring, ruut või suvaline) ja arvu. 
-Programm joonistab seejärel antud arvu kujundeid valitud tüübiga või juhul, kui valik on “suvaline”, 
-valib programm ise juhuslikult kujundi tüübi iga kujundi jaoks.
-Näide:
-Millist kujundit soovid joonistada (viisnurk, ring, ruut, suvaline)? Suvaline
-Mitu kujundit soovid joonistada? 5
-[Joonistab 5 kujundit, igaüks juhuslikult valitud tüübiga suvalistesse kohtadesse]
-Pärast joonistamist peaks programm pakkuma võimalust sisestada uued väärtused või väljuda programmist, 
-jättes sisendi tühjaks.
-"""
