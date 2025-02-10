@@ -8,7 +8,8 @@
 # Millist kujundit soovid joonistada (viisnurk, ring, ruut, suvaline)? Suvaline
 # Mitu kujundit soovid joonistada? 5
 # [Joonistab 5 kujundit, igaüks juhuslikult valitud tüübiga suvalistesse kohtadesse]
-# Pärast joonistamist peaks programm pakkuma võimalust sisestada uued väärtused või väljuda programmist, jättes sisendi tühjaks.
+# Pärast joonistamist peaks programm pakkuma võimalust sisestada uued väärtused või väljuda programmist, 
+# jättes sisendi tühjaks.
 
 def viruvinkel(t1, t2):
     if t1[0]==t2[0]:
