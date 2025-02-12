@@ -16,9 +16,9 @@ def viruvinkel(t1, t2):
         return True
     else:
         return False
-
-
-
+    
+print(viruvinkel("Mario", "Ets"))
+    
 
 def pikim_sona(s):
     sona = ""
@@ -29,5 +29,3 @@ def pikim_sona(s):
 
 sonad = ["viisnurk", "ring", "ruut", "suvaline"]
 pikim_sona(sonad)
-
-print(viruvinkel("Mario", "Ets"))

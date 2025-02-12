@@ -6,17 +6,17 @@
 # leiab ja väljastab eraldi ridadele, mitu õuna saab iga pöialpoiss (programm genereerib iga kord juhuslikult arvu 1 või 2);
 # leiab ja väljastab eraldi reale, mitu õuna jääb Lumivalgekesele.
 
-import random
+# import random
 
-ounad = 14
-poialpoiss = int(input("Mitu pöialpoissi tahab õuna: "))
+# ounad = 14
+# poialpoiss = int(input("Mitu pöialpoissi tahab õuna: "))
 
-for i in range(poialpoiss):
-    suv_oun = random.randint(1,2)
-    print(suv_oun)
-    ounad -= suv_oun
+# for i in range(poialpoiss):
+#     suv_oun = random.randint(1,2)
+#     print(suv_oun)
+#     ounad -= suv_oun
 
-print(f"Lumivalgekesele jäi {ounad} õuna!")
+# print(f"Lumivalgekesele jäi {ounad} õuna!")
 
 
 
