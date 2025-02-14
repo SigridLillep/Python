@@ -35,8 +35,19 @@ meeste keskmised töötunnid, töötasu ning palk
 naiste keskmised töötunnid, töötasu ning palk
 Tulemused prindi konsooli
 """
+meeste_palgad = 0
+naiste_palgad = 0
 
 with open ("palgad.txt") as fail:
     sisu = fail.readlines()
     for i in sisu:
-        print(i, end="")
+        #print(i, end="")
+        tykeldus = i.split(",")        #komadega eraldamine
+        #print(tykeldus[3])              #valin kolmanda algusest (0,1,2,3 - mees või naine
+        if tykeldus[3]=="Mees":
+            meeste_palgad+=float(tykeldus[6])   #Meeste palgad kokku
+        elif tykeldus[3]=="Naine":
+            naiste_palgad+=float(tykeldus[6])
+
+print(f"Meeste palgad: {meeste_palgad:.2f}")
+print(f"Naiste palgad: {naiste_palgad:.2f}")
