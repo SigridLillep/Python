@@ -41,7 +41,7 @@ naiste_palgad = 0
 with open ("palgad.txt") as fail:
     sisu = fail.readlines()
     for i in sisu:
-        #print(i, end="")
+        print(i, end="")
         tykeldus = i.split(",")        #komadega eraldamine
         #print(tykeldus[3])              #valin kolmanda algusest (0,1,2,3 - mees või naine
         if tykeldus[3]=="Mees":
