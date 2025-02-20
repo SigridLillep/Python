@@ -32,6 +32,7 @@ telefonid={
 'Kristi': '5703338',
 'Urmas': '5400549'
 }
+
 print(telefonid["Rasmus"])
 print(f"Rasmuse telefoni nr on: {telefonid["Rasmus"]}")
 telefonid.pop("Kristi")     #Kustutab Kristi numbri listist
