@@ -1,8 +1,11 @@
 import json
 
+leitud_kasutaja = []
+
 with open('users.json', 'r', encoding='utf-8') as file:
     data = json.load(file)
     users = data["users"]
+
 
     for user in users:
         id = user['id']
@@ -33,13 +36,29 @@ with open('users.json', 'r', encoding='utf-8') as file:
         crypto = f"{user['crypto']['coin']}, {user['crypto']['wallet']}, {user['crypto']['network']}"
         role = user['role']
 
+        
 
-        print(f"Name: {name}")
-        print(f"Hair: {hair}")
-        print(f"Address: {address}")
-        print(f"Bank info: {bank}")
-        print(f"Company info: {company}, \nCompany address: {company_address}")
-        print(f"Crypto info: {crypto}")
+        print(f"{id}. {name}")
+
+
+    kasutaja_valik = int(input("Vali kasutaja ID järgi (1-30):"))
+    
+    if kasutaja_valik == user['id']:
+            print(f"Leidsid kasutaja: {leitud_kasutaja}")
+    else:
+         print("Mine perse!")
+
+        
+
+    
+
+
+        # print(f"Name: {name}")
+        # print(f"Hair: {hair}")
+        # print(f"Address: {address}")
+        # print(f"Bank info: {bank}")
+        # print(f"Company info: {company}, \nCompany address: {company_address}")
+        # print(f"Crypto info: {crypto}")
 
     # for user in users: 
     #     kasutaja_valik = int(input("Vali kasutaja ID järgi (1-30):"))
