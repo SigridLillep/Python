@@ -42,11 +42,21 @@ with open('users.json', 'r', encoding='utf-8') as file:
 
 
     kasutaja_valik = int(input("Vali kasutaja ID järgi (1-30):"))
+
+    for user in users:
+        if kasutaja_valik == user['id']:
+            print(f"Leidsid kasutaja: {name}")
+        else: 
+            print("mine perse")
+       
+
+
+    # kasutaja_valik = int(input("Vali kasutaja ID järgi (1-30):"))
+    # print("leidsid:", kasutaja_valik)
     
-    if kasutaja_valik == user['id']:
-            print(f"Leidsid kasutaja: {leitud_kasutaja}")
-    else:
-         print("Mine perse!")
+    # if kasutaja_valik == user['id']:
+    #         print(user['name'])
+    
 
         
 
