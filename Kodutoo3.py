@@ -36,10 +36,7 @@ with open('users.json', 'r', encoding='utf-8') as file:
         crypto = f"{user['crypto']['coin']}, {user['crypto']['wallet']}, {user['crypto']['network']}"
         role = user['role']
 
-        
-
         print(f"{id}. {name}")
-
 
     kasutaja_valik = int(input("Vali kasutaja ID järgi (1-30):"))
     
@@ -47,37 +44,8 @@ for user in users:
     if kasutaja_valik == user['id']:
         print(f"Leidsid kasutaja: {name}")
     else: 
-        print("mine perse")
+        print("sellist ID'd pole")
        
-
-
-    # kasutaja_valik = int(input("Vali kasutaja ID järgi (1-30):"))
-    # print("leidsid:", kasutaja_valik)
-    
-    # if kasutaja_valik == user['id']:
-    #         print(user['name'])
-    
-
-        
-
-    
-
-
-        # print(f"Name: {name}")
-        # print(f"Hair: {hair}")
-        # print(f"Address: {address}")
-        # print(f"Bank info: {bank}")
-        # print(f"Company info: {company}, \nCompany address: {company_address}")
-        # print(f"Crypto info: {crypto}")
-
-    # for user in users: 
-    #     kasutaja_valik = int(input("Vali kasutaja ID järgi (1-30):"))
-    #     leitud_kasutaja = []
-    #     if user['id'] == 30:
-    #         leitud_kasutaja = user
-    #         print(f"Leidsid kasutaja: {(nimi)}")
-    #     else:
-    #         print("Sellise ID'ga kasutajat ei leitud!")
 
 
 
