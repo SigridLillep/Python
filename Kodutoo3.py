@@ -36,13 +36,20 @@ with open('users.json', 'r', encoding='utf-8') as file:
 
         print(f"{id}. {name}")
 
-kasutaja_valik = int(input("Vali kasutaja ID järgi (1-30):"))
+while True:
+    kasutaja_valik = int(input("Vali kasutaja ID järgi (1-30):"))
+        
+    for user in users:
+        if kasutaja_valik == user['id']:
+            print(f"Leidsid kasutaja: {user['firstName']} {user.get('maidenName', '')} {user['lastName']}")
+            break
+    else:
+        print("Sellise ID'ga kasutajat ei leitud, vali uuesti!")
+        continue
     
-for user in users:
-    if kasutaja_valik == user['id']:
-        print(f"Leidsid kasutaja: {user['firstName']} {user.get('maidenName', '')} {user['lastName']}")
-    # else: 
-    #     print("sellist ID'd pole")
+
+    info_valik = int(input("Millist infot saada soovid?: "))
+
        
 
 
