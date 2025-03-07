@@ -1,9 +1,21 @@
+import requests
 import json
+
+url = 'https://dummyjson.com/users'
+fail = 'users.json'
+
+response = requests.get(url)
+
+if response.status_code == 200:
+    with open(fail, 'wb') as f:
+        f.write(response.content)
+    print(f"Fail {fail} salvestatud")
+else:
+    print(f"Faili alla laadimine ebaõnnestus: {response.status_code}")
 
 with open('users.json', 'r', encoding='utf-8') as file:
     data = json.load(file)
     users = data["users"]
-
 
     for user in users:
         id = user['id']
