@@ -8,10 +8,9 @@
 """
 import requests
 import json
-massaaž = 0
+
 
 url = 'https://metshein.com/kordamine/json/broneeringud.json'
-fail = 'broneeringud.json'
 
 response = requests.get(url)
 
