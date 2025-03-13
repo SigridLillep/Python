@@ -27,9 +27,10 @@ if response.status_code == 200:
         if broneeringu_aeg.hour >= 12:
             parast12 += 1
         
+        #Kliendid, kelle broneering on nädalavahetusel:
         kp = datetime.strptime(broneering['kuupäev'], '%Y-%m-%d').strftime('%A')
         if kp == "Sunday" or kp == "Saturday":
-            print(f"Nädalavahetuse klient: {broneering["klient"]}")
+            print(broneering["klient"])
 
 else:
     print("Päring ebaõnnestus, staatuskood:", response.status_code)
